@@ -1,0 +1,18 @@
+.header_ribbon_message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    &__message_options {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__button_block {
+        display: flex;
+        align-items: center;
+        width: 78%;
+        justify-content: space-between;
+    }
+}
