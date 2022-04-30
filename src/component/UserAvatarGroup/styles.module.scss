@@ -1,0 +1,18 @@
+.user_avatar_group {
+    display: inline-flex;
+    & svg {
+        width: 36px;
+        height: 36px;
+    }
+    &__name_user_block {
+        color: #808080;
+        margin-left: 10px;
+    }
+    &__name {
+        font-size: 16px;
+    }
+    &__post_social {
+        font-style: italic;
+        font-size: 12px;
+    }
+}
