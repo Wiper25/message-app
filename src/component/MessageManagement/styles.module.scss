@@ -1,0 +1,26 @@
+.message_management {
+    & button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        &:hover {
+            background-color: transparent;
+        }
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin: 0px 5px;
+        }
+    }
+    &__disable {
+        color: rgba(128, 128, 128, 0.4);
+    }
+    &__enable{
+        color: #0088EE;
+    }
+    &__send_message_btn {
+        transform: rotate(-90deg);
+        padding: 6px 0px;
+    }
+}
