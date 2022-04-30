@@ -1,0 +1,13 @@
+.text_alignment {
+    min-width: 212px;
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+        width: 64px;
+        height: 28px;
+    }
+    & span {
+        font-size: 11px;
+        text-transform: none;
+    }
+}
