@@ -19,8 +19,8 @@ const TextTimeMessage = ({ textPosition, content, attachments, data }) => {
                 {content && <p ref={boxRef} className={classNames(styles.text_time_messages__message, `text-${textPosition}`)}>{content}</p>}
                 {!content && <p className={styles.text_time_messages__empty_message}>Пустое сообщение</p>}
                 {content.length >= 100 && <button className={styles.text_time_messages__further} onClick={() => { setIsOpenMessage(!isOpenMessage) }}>{!isOpenMessage ? 'Далее' : 'Свернуть'}</button>}
-                {attachments && attachments.map(item =>
-                    <div className={styles.text_time_messages__media_block}>{item.type === "image" ? <img src={item.url} /> : <video controls preload ><source src={item.url} type="video/mp4" /></video>}</div>
+                {attachments && attachments.map((item, index) =>
+                    <div key={index} className={styles.text_time_messages__media_block}>{item.type === "image" ? <img src={item.url} /> : <video controls preload="true" ><source src={item.url} type="video/mp4" /></video>}</div>
                 )}
             </div>
         </div >

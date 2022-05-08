@@ -37,7 +37,7 @@ p {
 }
 .spinner-loading-block {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,4 +46,11 @@ p {
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
+}
+.message-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+    width: 30%;
+    margin: 0 auto;
 }
